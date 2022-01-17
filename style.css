@@ -112,15 +112,23 @@
     background: none;
 }
 
-/* about section styling */
+/* all similar content styling code */
 section{
     padding: 100px 0;
     background-color: rgba(76, 121, 103);
 }
-.about{
+.about, .projects, .skills{
     font-family: 'Arvo';
 }
-.about .title{
+.about .about-content,
+.projects .projects-content,
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -129,7 +137,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Arvo';
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -139,8 +147,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -150,11 +157,10 @@ section{
     background: rgb(76, 121, 103);
     transform: translateX(-50%);
 }
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+
+/* about section styling */
+.about .title::after{
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -194,6 +200,59 @@ section{
 .about .about-content .right a:hover{
     color: rgb(223, 194, 32);
     background: none;
+}
+
+/* projects section styling */
+.projects{
+    color: #fff;
+    background: #111;
+}
+.projects .title::before{
+    background: #fff;
+}
+.projects .title::after{
+    background: #111;
+    content: "what I've done";
+}
+.projects .projects-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1%;
+}
+.projects .projects-content .card:hover{
+    background: rgb(17, 73, 56);
+}
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-content .card i{
+    font-size: 50px;
+    color: rgb(223, 194, 32);
+    transition: color 0.3s ease;
+}
+.projects .projects-content .card:hover i{
+    background: #111;
+}
+.projects .projects-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
+.skills .title::after{
+    content: "what I know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
 }
 
 
@@ -277,6 +336,10 @@ section{
     .about .about-content .right{
         flex: 100%;
     }
+    .projects .projects-content .card{
+        width: calc(50% - 20px);
+        margin-bottom: 20%;
+    }
 }
 
 @media (max-width: 690px){
@@ -291,6 +354,9 @@ section{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .projects .projects-content .card{
+        width: 100%;
     }
 }
 
