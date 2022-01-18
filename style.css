@@ -117,7 +117,7 @@ section{
     padding: 100px 0;
     background-color: rgba(76, 121, 103);
 }
-.about, .projects, .skills{
+.about, .projects, .skills, .teams{
     font-family: 'Arvo';
 }
 .about .about-content,
@@ -203,14 +203,16 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects{
+.projects, .teams{
     color: #fff;
     background: #111;
 }
-.projects .title::before{
+.projects .title::before,
+.teams .title::before{
     background: #fff;
 }
-.projects .title::after{
+.projects .title::after,
+.teams .title::after{
     background: #111;
     content: "what I've done";
 }
@@ -329,6 +331,78 @@ section .title::after{
 .skills .skills-content .right .node::before{
     width: 50%;
 }
+
+/* teams section styling */
+.teams .title::after{
+    content: "with who I've been ";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: rgb(223, 194, 32);
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(223, 194, 32);
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(223, 194, 32)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: rgb(223, 194, 32)!important;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
