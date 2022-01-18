@@ -257,7 +257,8 @@ section .title::after{
     margin: 1%;
 }
 .projects .projects-content .card:hover{
-    background: rgb(17, 73, 56);
+    background: rgb(79, 109, 97);
+    color: #111;
 }
 .projects .projects-content .card .box{
     transition: all 0.3s ease;
