@@ -7,21 +7,25 @@
             <link rel="stylesheet" href="style.css">
             <script src="https://kit.fontawesome.com/ac3fbd6e98.js" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
         </head>
         <body>
+            <div class="scroll-up-btn">
+                <i class="fas fa-angle-up"></i>
+            </div>
             <nav class="navbar">
                 <div class="max-width">
                     <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
                     <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Teams</a></li>
-                        <li><a href="#">Contact<menu></menu></a></li>
+                        <li><a href="#home" class="menu-btn">Home</a></li>
+                        <li><a href="#about" class="menu-btn">About Me</a></li>
+                        <li><a href="#skills" class="menu-btn">Skills</a></li>
+                        <li><a href="#projects" class="menu-btn">Projects</a></li>
+                        <li><a href="#teams" class="menu-btn">Teams</a></li>
+                        <li><a href="#contact" class="menu-btn">Contact<menu></menu></a></li>
                     </ul>
                     <div class="menu-btn">
                         <i class="fas fa-bars"></i>
@@ -37,7 +41,7 @@
                         <div class="home-content">
                             <div class="text-1">Hello, my name is</div>
                             <div class="text-2">Victor Paturzo</div>
-                            <div class="text-3">And I am a <span>MERN fullstack developer</span></div>
+                            <div class="text-3">And I am a <span class="typing"></span></div>
                             <a href="#">Hire me</a>
                         </div>
                     </div>
@@ -52,7 +56,7 @@
                                 <img src="./images/Portrait 1.jpg" alt="" class="images">
                             </div>
                             <div class="column right">
-                                <div class="text">I'm Victor and I am a <span>Web Developer</span></div>
+                                <div class="text">I'm Victor and I am a <span class="typing-2"></span></div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium minima suscipit dignissimos placeat doloribus voluptas ea labore eum? Explicabo accusantium sed praesentium, ducimus repudiandae, deleniti dolorem ipsa ea eius illo enim nisi? Aspernatur earum vero assumenda porro voluptatum quasi nostrum aperiam eaque accusamus. Reprehenderit, similique dolores! Recusandae commodi tempore accusamus consequuntur cumque ad mollitia laudantium, distinctio culpa sed tempora.</p>
                                 <a href="#">Download CV</a>
                             </div>
@@ -60,60 +64,8 @@
                     </div>
                 </section>
 
-                <!-- projects section start -->
-                <section class="projects" id="projects">
-                    <div class="max-width">
-                        <h2 class="title">My Projects</h2>
-                        <div class="projects-content">
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="box">
-                                    <i class="fas fa-code"></i>
-                                    <div class="text">Web Design</div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <!-- skills section start -->
-                <section class="skills" id="skills">
+                 <!-- skills section start -->
+                 <section class="skills" id="skills">
                     <div class="max-width">
                         <h2 class="title">My Skills</h2>
                         <div class="skills-content">
@@ -180,6 +132,58 @@
                                     <div class="line axios"></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- projects section start -->
+                <section class="projects" id="projects">
+                    <div class="max-width">
+                        <h2 class="title">My Projects</h2>
+                        <div class="projects-content">
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="box">
+                                    <i class="fas fa-code"></i>
+                                    <div class="text">Web Design</div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cum blanditiis vel itaque reprehenderit inventore?</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -290,7 +294,10 @@
                     </div>
                 </section>
 
-
+                <!-- footer section start -->
+                <footer>
+                    <span>Created By <a href="#">Victor Paturzo</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+                </footer>
 
                 <script src="script.js"></script>
             </main>
