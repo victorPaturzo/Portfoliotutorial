@@ -362,6 +362,30 @@ section .title::after{
 .skills .skills-content .right .node::before{
     width: 50%;
 }
+.skills .skills-content .right .sap::before{
+    width: 60%;
+}
+.skills .skills-content .right .mdg::before{
+    width: 40%;
+}
+.skills .skills-content .right .java::before{
+    width: 40%;
+}
+.skills .skills-content .right .microsofttechnologies::before{
+    width: 75%;
+}
+.skills .skills-content .right .agilemethodologies::before{
+    width: 60%;
+}
+.skills .skills-content .right .technicalwriting::before{
+    width: 60%;
+}
+.skills .skills-content .right .qualityengineering::before{
+    width: 30%;
+}
+.skills .skills-content .right .communication::before{
+    width: 30%;
+}
 
 /* teams section styling */
 .teams .title::after{
